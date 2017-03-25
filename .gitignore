@@ -25,7 +25,7 @@ coverage
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
-compiled/bundle.js
+/compiled
 
 # Dependency directories
 node_modules

@@ -1,0 +1,6 @@
+#postList{
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}

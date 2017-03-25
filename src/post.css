@@ -1,0 +1,18 @@
+
+
+.post{
+  background-color: #f3f3f3;
+  display: flex;
+  margin-bottom: 5px;
+  padding: 2px;
+}
+
+.postUser{
+  font-weight: 900;
+  /*margin-right: 10px;*/
+}
+
+.postTitle{
+  font-style: italic;
+  font-size: 18px;
+}
