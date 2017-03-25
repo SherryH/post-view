@@ -1,0 +1,34 @@
+body {
+  background-color: #f3f3f3;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#post-list{
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post{
+  background-color: #f3f3f3;
+  display: flex;
+  margin-bottom: 5px;
+  padding: 2px;
+}
+
+.post-user{
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.post-title{
+  font-style: italic;
+}
