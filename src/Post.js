@@ -18,10 +18,9 @@ Post.defaultProps = {
 };
 
 Post.propTypes = {
-  userId: React.PropTypes.string,
+  userId: React.PropTypes.number,
   title: React.PropTypes.string,
   body: React.PropTypes.string,
-
 };
 
 export default Post;
