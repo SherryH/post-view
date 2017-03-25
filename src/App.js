@@ -16,17 +16,15 @@ const dummyData = [
     "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
   }];
 
-const App = () => {
-  return (
-    <div id={styles.postList}>
-      A list of posts
-      {
-        dummyData.map((data) => (
-          <Post key={data.id.toString()} userId={data.userId} title={data.title} body={data.body}/>
-        ))
-      }
-    </div>
-  );
-};
+const App = () => (
+  <div id={styles.postList}>
+    A list of posts
+    {
+      dummyData.map(data => (
+        <Post key={data.id.toString()} userId={data.userId} title={data.title} body={data.body} />
+      ))
+    }
+  </div>
+);
 
 export default App;
