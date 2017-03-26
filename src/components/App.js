@@ -13,7 +13,7 @@ class App extends React.Component {
     //   numPosts: 10,
     // };
     // this.getPosts = this.getPosts.bind(this);
-    this.showMorePosts = this.showMorePosts.bind(this);
+    // this.showMorePosts = this.showMorePosts.bind(this);
   }
   // componentDidMount() {
   //   this.props.dispatch(getPosts());
@@ -29,13 +29,13 @@ class App extends React.Component {
   //   });
   // }
 
-  showMorePosts() {
-    const numPosts = this.props.numPosts + 10;
-    this.setState({
-      numPosts,
-      currentPosts: this.props.posts.slice(0, numPosts),
-    });
-  }
+  // showMorePosts() {
+  //   const numPosts = this.props.numPosts + 10;
+  //   this.setState({
+  //     numPosts,
+  //     currentPosts: this.props.posts.slice(0, numPosts),
+  //   });
+  // }
 
   render() {
     return (
@@ -46,7 +46,7 @@ class App extends React.Component {
             <Post key={post.id.toString()} userId={post.userId} title={post.title} body={post.body} />
           ))
         }
-        <button onClick={this.showMorePosts}>Show More</button>
+        <button onClick={this.props.showMorePosts}>Show More</button>
       </div>
     );
   }
@@ -56,10 +56,12 @@ App.defaultProps = {
   numPosts: 10,
   posts: [],
   currentPosts: [],
-  dispatch: {},
+  dispatch: function() {},
+  showMorePosts: function() {},
 };
 
 App.propTypes = {
+  showMorePosts: React.PropTypes.func,
   dispatch: React.PropTypes.func,
   numPosts: React.PropTypes.number,
   posts: React.PropTypes.arrayOf(

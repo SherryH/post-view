@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { GET_POSTS_SUCCESS } from '../constants';
+import { GET_POSTS_SUCCESS, SHOW_MORE_POSTS } from '../constants';
 
 const fetchPostAjax = () => {
   const root = 'https://jsonplaceholder.typicode.com';
@@ -8,9 +8,14 @@ const fetchPostAjax = () => {
   .catch(error => `ERROR FETCHING POSTS: ${error}`);
 };
 
-
-export function getPostsSuccess(posts) {
+function getPostsSuccess(posts) {
   return { type: GET_POSTS_SUCCESS, posts };
+}
+
+export function showMorePosts() {
+  return {
+    type: SHOW_MORE_POSTS,
+  };
 }
 
 // getPosts returns a function, that gets passed through Thunk
@@ -26,4 +31,3 @@ export const getPosts = () =>
     })
     .catch(error => `ERROR GETTING POSTS: ${error}`);
   };
-

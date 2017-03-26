@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import App from '../components/App';
+import { showMorePosts } from '../actions';
 
 
 function mapStateToProps(state) {
@@ -11,10 +12,12 @@ function mapStateToProps(state) {
   };
 }
 
-// function mapDispatchToProps(dispatch) {
-//   return
-// }
+function mapDispatchToProps(dispatch) {
+  return {
+    showMorePosts: () => dispatch(showMorePosts()),
+  };
+}
 
-const AppContainer = connect(mapStateToProps)(App);
+const AppContainer = connect(mapStateToProps, mapDispatchToProps)(App);
 
 export default AppContainer;
