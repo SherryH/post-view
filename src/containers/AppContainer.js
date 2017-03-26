@@ -1,12 +1,8 @@
 import { connect } from 'react-redux';
 import App from '../components/App';
 
-const initialStates = {
-  numPosts: 10,
-  posts: [],
-  currentPosts: [],
-};
-function mapStateToProps(state = initialStates) {
+
+function mapStateToProps(state) {
   const { numPosts, posts, currentPosts } = state;
   return {
     numPosts,
