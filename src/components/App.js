@@ -17,8 +17,6 @@ function App(props) {
 }
 
 App.defaultProps = {
-  numPosts: 10,
-  posts: [],
   currentPosts: [],
   showMorePosts: function showMorePosts() {},
 };
