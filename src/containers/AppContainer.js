@@ -11,6 +11,10 @@ function mapStateToProps(state) {
   };
 }
 
+// function mapDispatchToProps(dispatch) {
+//   return
+// }
+
 const AppContainer = connect(mapStateToProps)(App);
 
 export default AppContainer;
