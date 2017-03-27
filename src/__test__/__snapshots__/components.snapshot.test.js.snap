@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component presentation: App component renders correctly 1`] = `
+<div
+  id="postList"
+>
+  <h2>
+    A list of posts 
+  </h2>
+  <div
+    className="post"
+  >
+    <div
+      className="postUser"
+    >
+      2
+    </div>
+    <div>
+      <div
+        className="postTitle"
+      >
+        title2
+      </div>
+      <div>
+        body2
+      </div>
+    </div>
+  </div>
+  <div
+    className="post"
+  >
+    <div
+      className="postUser"
+    >
+      3
+    </div>
+    <div>
+      <div
+        className="postTitle"
+      >
+        title3
+      </div>
+      <div>
+        body3
+      </div>
+    </div>
+  </div>
+  <button
+    onClick={[Function]}
+  >
+    Show More
+  </button>
+</div>
+`;
+
+exports[`Component presentation: Post component renders correctly 1`] = `
+<div
+  className="post"
+>
+  <div
+    className="postUser"
+  >
+    1
+  </div>
+  <div>
+    <div
+      className="postTitle"
+    >
+      dummyTitle
+    </div>
+    <div>
+      dummyBody
+    </div>
+  </div>
+</div>
+`;

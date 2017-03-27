@@ -8,7 +8,7 @@ function App(props) {
       <h2>A list of posts </h2>
       {
         props.currentPosts.map(post => (
-          <Post key={post.id.toString()} userId={post.userId} title={post.title} body={post.body} />
+          <Post key={post.id.toString()} post={post} />
         ))
       }
       <button onClick={props.showMorePosts}>Show More</button>

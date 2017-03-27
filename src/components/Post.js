@@ -1,26 +1,26 @@
 import React from 'react';
 import styles from './post.css';
 
-const Post = ({ userId, title, body }) => (
+const Post = ({ post }) => (
   <div className={styles.post}>
-    <div className={styles.postUser}>{userId}</div>
+    <div className={styles.postUser}>{post.userId}</div>
     <div>
-      <div className={styles.postTitle}>{title}</div>
-      <div>{body}</div>
+      <div className={styles.postTitle}>{post.title}</div>
+      <div>{post.body}</div>
     </div>
   </div>
 );
 
 Post.defaultProps = {
-  userId: '',
-  title: '',
-  body: '',
+  post: {},
 };
 
 Post.propTypes = {
-  userId: React.PropTypes.number,
-  title: React.PropTypes.string,
-  body: React.PropTypes.string,
+  post: React.PropTypes.shape({
+    userId: React.PropTypes.number,
+    title: React.PropTypes.string,
+    body: React.PropTypes.string,
+  }),
 };
 
 export default Post;
