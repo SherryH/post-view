@@ -8,15 +8,18 @@ const fetchPostAjax = () => {
   .catch(error => `ERROR FETCHING POSTS: ${error}`);
 };
 
-function getPostsSuccess(posts) {
-  return { type: GET_POSTS_SUCCESS, posts };
-}
+const getPostsSuccess = posts => (
+  {
+    type: GET_POSTS_SUCCESS,
+    posts,
+  }
+);
 
-export function showMorePosts() {
-  return {
+export const showMorePosts = () => (
+  {
     type: SHOW_MORE_POSTS,
-  };
-}
+  }
+);
 
 // getPosts returns a function, that gets passed through Thunk
 // the action function will not update store, only action object will
