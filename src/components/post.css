@@ -6,6 +6,10 @@
   padding: 2px;
 }
 
+.postMessage{
+  flex-grow: 99;
+}
+
 .postUser{
   font-weight: 900;
   /*margin-right: 10px;*/

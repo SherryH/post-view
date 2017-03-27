@@ -27,6 +27,7 @@ export const getPosts = () =>
     // the action dispatched will be objects
     fetchPostAjax()
     .then((posts) => {
+      console.log('posts returned', posts);
       dispatch(getPostsSuccess(posts));
     })
     .catch(error => `ERROR GETTING POSTS: ${error}`);

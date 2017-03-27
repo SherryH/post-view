@@ -4,7 +4,7 @@ import styles from './post.css';
 const Post = ({ post }) => (
   <div className={styles.post}>
     <div className={styles.postUser}>{post.userId}</div>
-    <div>
+    <div className={styles.postMessage}>
       <div className={styles.postTitle}>{post.title}</div>
       <div>{post.body}</div>
     </div>
