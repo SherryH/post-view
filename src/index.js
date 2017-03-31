@@ -10,6 +10,8 @@ const app = document.getElementById('app');
 
 const store = configureStore();
 
+// it is best to dispatch the action inside the App lifeCycle
+// separation of concern
 store.dispatch(getPosts());
 
 render(
